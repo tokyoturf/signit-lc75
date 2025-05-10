@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIt!</title>
+    <link rel="stylesheet" href="{{ css_url }}">
+</head>
+<body>
+    <h1>SignIt! Real-time Sign Language Translation</h1>
+    <div class="container">
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" width="640" height="480">
+        </div>
+        <div class="results-container">
+            <h2>Translation:</h2>
+            <div id="detections"></div>
+        </div>
+    </div>
+
+    <script src="{{ js_url }}"></script>
+</body>
+</html>
